@@ -1,5 +1,8 @@
 # blockedpath-skills
 
+[![Validate marketplace](https://github.com/BlockedPath/Skills/actions/workflows/validate.yml/badge.svg)](https://github.com/BlockedPath/Skills/actions/workflows/validate.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A plugin marketplace containing skills and plugins for [Claude Code](https://claude.com/claude-code) and [Codex](https://developers.openai.com/codex).
 
 ## Installation
