@@ -1,6 +1,6 @@
 {
   "name": "blockedpath-skills",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Installer for the blockedpath-skills plugin marketplace (Claude Code & Codex)",
   "license": "MIT",
   "bin": {
