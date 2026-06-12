@@ -5,6 +5,7 @@
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/BlockedPath/Skills/badge)](https://scorecard.dev/viewer/?uri=github.com/BlockedPath/Skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/blockedpath-skills.svg)](https://www.npmjs.com/package/blockedpath-skills)
+[![GitHub release](https://img.shields.io/github/v/release/BlockedPath/Skills)](https://github.com/BlockedPath/Skills/releases/latest)
 
 A plugin marketplace containing skills and plugins for [Claude Code](https://claude.com/claude-code) and [Codex](https://developers.openai.com/codex).
 
