@@ -6,6 +6,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/blockedpath-skills.svg)](https://www.npmjs.com/package/blockedpath-skills)
 [![GitHub release](https://img.shields.io/github/v/release/BlockedPath/Skills)](https://github.com/BlockedPath/Skills/releases/latest)
+![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=claude&logoColor=white)
+![Codex](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 
 A plugin marketplace containing skills and plugins for [Claude Code](https://claude.com/claude-code) and [Codex](https://developers.openai.com/codex).
 
