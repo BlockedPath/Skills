@@ -1,6 +1,8 @@
 # blockedpath-skills
 
 [![Validate marketplace](https://github.com/BlockedPath/Skills/actions/workflows/validate.yml/badge.svg)](https://github.com/BlockedPath/Skills/actions/workflows/validate.yml)
+[![CodeQL](https://github.com/BlockedPath/Skills/actions/workflows/codeql.yml/badge.svg)](https://github.com/BlockedPath/Skills/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/BlockedPath/Skills/badge)](https://scorecard.dev/viewer/?uri=github.com/BlockedPath/Skills)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![npm](https://img.shields.io/npm/v/blockedpath-skills.svg)](https://www.npmjs.com/package/blockedpath-skills)
 
