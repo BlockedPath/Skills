@@ -39,7 +39,16 @@ jobs:
         with:
           subject-path: "*.tgz"
 
+      - name: Download provenance attestation
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tarball=$(ls *.tgz)
+          gh attestation download "$tarball" --repo "${{ github.repository }}"
+          digest=$(sha256sum "$tarball" | cut -d' ' -f1)
+          mv "sha256-${digest}.jsonl" "${tarball}.intoto.jsonl"
+
       - name: Create GitHub Release
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "${{ github.ref_name }}" --generate-notes *.tgz
+        run: gh release create "${{ github.ref_name }}" --generate-notes *.tgz *.intoto.jsonl
