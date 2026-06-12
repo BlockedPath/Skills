@@ -21,6 +21,12 @@ Thanks for your interest in contributing to this plugin marketplace!
 - Bump `version` in `plugins/<plugin-name>/.claude-plugin/plugin.json` (and the Codex manifest if relevant) so users receive the update.
 - Re-run `claude plugin validate .` to confirm nothing is broken.
 
+## Publishing to npm
+
+The root `package.json` (`blockedpath-skills`) powers `npx blockedpath-skills` (see [bin/install.js](bin/install.js)). Bump its `version` and run `npm publish` after meaningful changes to the installer.
+
+Each plugin may also have its own `plugins/<plugin-name>/package.json` so it can be referenced as an npm `source` in `marketplace.json` (e.g. `@blockedpath/x-article-to-markdown`). Publish with `npm publish --access public` from that plugin's directory if you want to offer this as an alternate source.
+
 ## Pull requests
 
 - Keep changes scoped to a single plugin or concern where possible.

@@ -1,0 +1,26 @@
+{
+  "name": "@blockedpath/x-article-to-markdown",
+  "version": "1.0.0",
+  "description": "Save X (Twitter) Articles as markdown files. Claude Code / Codex plugin.",
+  "license": "MIT",
+  "files": [
+    ".claude-plugin",
+    ".codex-plugin",
+    "skills"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockedPath/Skills.git",
+    "directory": "plugins/x-article-to-markdown"
+  },
+  "homepage": "https://github.com/BlockedPath/Skills/tree/main/plugins/x-article-to-markdown",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "plugin",
+    "skill",
+    "x",
+    "twitter",
+    "markdown"
+  ]
+}

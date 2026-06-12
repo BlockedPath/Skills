@@ -1,0 +1,24 @@
+{
+  "name": "blockedpath-skills",
+  "version": "1.0.0",
+  "description": "Installer for the blockedpath-skills plugin marketplace (Claude Code & Codex)",
+  "license": "MIT",
+  "bin": {
+    "blockedpath-skills": "./bin/install.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlockedPath/Skills.git"
+  },
+  "homepage": "https://github.com/BlockedPath/Skills",
+  "keywords": [
+    "claude-code",
+    "codex",
+    "plugin-marketplace",
+    "claude",
+    "skills"
+  ]
+}

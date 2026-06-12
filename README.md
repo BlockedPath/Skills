@@ -7,6 +7,14 @@ A plugin marketplace containing skills and plugins for [Claude Code](https://cla
 
 ## Installation
 
+### Quick install (npx)
+
+```
+npx blockedpath-skills
+```
+
+Detects whichever of Claude Code / Codex you have installed, adds this marketplace, and installs the available plugins.
+
 ### Claude Code
 
 ```
@@ -35,9 +43,12 @@ See [plugins/x-article-to-markdown/skills/x-article-to-markdown/SKILL.md](plugin
 ## Repository structure
 
 ```
-.claude-plugin/marketplace.json   # marketplace catalog (Claude Code; also read by Codex as a legacy path)
+package.json                       # npx installer (`npx blockedpath-skills`)
+bin/install.js
+.claude-plugin/marketplace.json    # marketplace catalog (Claude Code; also read by Codex as a legacy path)
 plugins/
   <plugin-name>/
+    package.json                   # optional: publish plugin to npm as an alternate source
     .claude-plugin/plugin.json     # plugin manifest for Claude Code
     .codex-plugin/plugin.json      # plugin manifest for Codex
     skills/<skill-name>/SKILL.md   # skill definition, shared by both
