@@ -1,0 +1,6 @@
+{
+  "name": "x-article-to-markdown",
+  "version": "1.0.0",
+  "description": "Save X articles as markdown files.",
+  "skills": "./skills/"
+}
