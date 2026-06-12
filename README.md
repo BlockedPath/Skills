@@ -11,6 +11,10 @@
 
 A plugin marketplace containing skills and plugins for [Claude Code](https://claude.com/claude-code) and [Codex](https://developers.openai.com/codex).
 
+
+https://github.com/user-attachments/assets/de5a9884-9a9a-4842-9cd1-884e00e7b512
+
+
 ## Installation
 
 ### Quick install (npx)
