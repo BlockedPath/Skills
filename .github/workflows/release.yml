@@ -46,7 +46,7 @@ jobs:
           tarball=$(ls *.tgz)
           gh attestation download "$tarball" --repo "${{ github.repository }}"
           digest=$(sha256sum "$tarball" | cut -d' ' -f1)
-          mv "sha256-${digest}.jsonl" "${tarball}.intoto.jsonl"
+          mv "sha256:${digest}.jsonl" "${tarball}.intoto.jsonl"
 
       - name: Create GitHub Release
         env:
