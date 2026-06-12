@@ -4,14 +4,14 @@
   "description": "Installer for the blockedpath-skills plugin marketplace (Claude Code & Codex)",
   "license": "MIT",
   "bin": {
-    "blockedpath-skills": "./bin/install.js"
+    "blockedpath-skills": "bin/install.js"
   },
   "files": [
     "bin"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlockedPath/Skills.git"
+    "url": "git+https://github.com/BlockedPath/Skills.git"
   },
   "homepage": "https://github.com/BlockedPath/Skills",
   "keywords": [
