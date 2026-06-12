@@ -1,0 +1,22 @@
+[
+  {"query": "save this X article as markdown so I can read it offline later: https://x.com/karpathy/article/2002118205729562949", "should_trigger": true},
+  {"query": "can you grab this twitter article and turn it into a .md file with the images? https://x.com/mvanhorn/article/2061877533885473181", "should_trigger": true},
+  {"query": "i want a local copy of this x.com long-form post that looks exactly like it does on the site — https://x.com/Av1dlive/status/2061829084871901481", "should_trigger": true},
+  {"query": "download this X premium article to my mac, keep the headings and code blocks intact", "should_trigger": true},
+  {"query": "archive this article from X into markdown before the author deletes it, cover image and all", "should_trigger": true},
+  {"query": "convert https://twitter.com/balajis/article/1789456123 into a clean markdown doc", "should_trigger": true},
+  {"query": "back up my own X longform piece as a markdown file with the pictures saved locally", "should_trigger": true},
+  {"query": "scrape this karpathy piece off X and give me faithful markdown I can drop into Obsidian", "should_trigger": true},
+  {"query": "here's an x.com/article link, make it a local md that renders the same: https://x.com/foo/article/999888", "should_trigger": true},
+  {"query": "export this X article to markdown and preserve the bullet lists and links please", "should_trigger": true},
+  {"query": "summarize the key points of this X article for me: https://x.com/karpathy/article/2002118205729562949", "should_trigger": false},
+  {"query": "screenshot this tweet and save it as a png: https://x.com/jack/status/20", "should_trigger": false},
+  {"query": "scrape this Substack post into markdown: https://platformer.substack.com/p/the-thing", "should_trigger": false},
+  {"query": "convert this medium article to markdown: https://medium.com/@me/my-post-abc123", "should_trigger": false},
+  {"query": "what does this x article say about reinforcement learning? https://x.com/karpathy/article/2002118205729562949", "should_trigger": false},
+  {"query": "monitor this x.com profile and email me when they post a new article", "should_trigger": false},
+  {"query": "turn this PDF in my downloads into a markdown file: ~/Downloads/whitepaper.pdf", "should_trigger": false},
+  {"query": "draft a new X article about our product launch and post it to my account", "should_trigger": false},
+  {"query": "get the title and og:image from this x link for a slack unfurl: https://x.com/foo/status/123456", "should_trigger": false},
+  {"query": "download all the videos from this X thread: https://x.com/foo/status/456789", "should_trigger": false}
+]

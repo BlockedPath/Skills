@@ -1,0 +1,18 @@
+{
+  "name": "blockedpath-skills",
+  "description": "Blockedpath's collection of Claude Code skills and plugins.",
+  "owner": {
+    "name": "Blockedpath"
+  },
+  "plugins": [
+    {
+      "name": "x-article-to-markdown",
+      "source": "./plugins/x-article-to-markdown",
+      "description": "Save X (Twitter) Articles as markdown files.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Blockedpath"
+      }
+    }
+  ]
+}

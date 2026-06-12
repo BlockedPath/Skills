@@ -1,0 +1,8 @@
+{
+  "name": "x-article-to-markdown",
+  "description": "Save X articles as markdown files.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Blockedpath"
+  }
+}
