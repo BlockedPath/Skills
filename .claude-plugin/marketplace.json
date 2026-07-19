@@ -1,7 +1,8 @@
 {
-  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "blockedpath-skills",
-  "description": "Blockedpath's collection of Claude Code skills and plugins.",
+  "metadata": {
+    "description": "Blockedpath's collection of Claude Code skills and plugins."
+  },
   "owner": {
     "name": "Blockedpath"
   },
@@ -16,6 +17,17 @@
       "license": "MIT",
       "category": "productivity",
       "keywords": ["x", "twitter", "markdown", "scraping", "archiving"]
+    },
+    {
+      "name": "hermes-tweet",
+      "source": "./plugins/hermes-tweet",
+      "description": "Use Hermes Tweet for X/Twitter research, monitoring, and approval-gated actions. Not affiliated with X Corp.",
+      "author": {
+        "name": "Xquik"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["hermes-agent", "x", "twitter", "xquik", "social-media", "automation"]
     }
   ]
 }

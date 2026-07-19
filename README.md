@@ -50,6 +50,14 @@ Scrapes an X (Twitter) long-form Article into a local Markdown file, faithfully 
 
 See [plugins/x-article-to-markdown/skills/x-article-to-markdown/SKILL.md](plugins/x-article-to-markdown/skills/x-article-to-markdown/SKILL.md) for details.
 
+### hermes-tweet
+
+Guides agents through Hermes Tweet, the native Hermes Agent X/Twitter plugin for Xquik. It covers endpoint discovery, read-only calls, approval-gated action calls, runtime checks, and credential safety.
+
+Xquik is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
+See [plugins/hermes-tweet/skills/hermes-tweet/SKILL.md](plugins/hermes-tweet/skills/hermes-tweet/SKILL.md) for details.
+
 ## Repository structure
 
 ```

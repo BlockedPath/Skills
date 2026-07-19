@@ -5,7 +5,7 @@ const { spawnSync } = require('child_process');
 
 const MARKETPLACE_REPO = 'BlockedPath/Skills';
 const MARKETPLACE_NAME = 'blockedpath-skills';
-const PLUGINS = ['x-article-to-markdown'];
+const PLUGINS = ['x-article-to-markdown', 'hermes-tweet'];
 
 function commandExists(cmd) {
   const result = spawnSync(cmd, ['--version'], { stdio: 'ignore' });
@@ -19,13 +19,16 @@ function run(cmd, args) {
 }
 
 let found = false;
+let succeeded = true;
 
 if (commandExists('claude')) {
   found = true;
   console.log('== Claude Code ==');
-  run('claude', ['plugin', 'marketplace', 'add', MARKETPLACE_REPO]);
+  succeeded = run('claude', ['plugin', 'marketplace', 'add', MARKETPLACE_REPO]);
   for (const plugin of PLUGINS) {
-    run('claude', ['plugin', 'install', `${plugin}@${MARKETPLACE_NAME}`]);
+    succeeded =
+      run('claude', ['plugin', 'install', `${plugin}@${MARKETPLACE_NAME}`]) &&
+      succeeded;
   }
 } else {
   console.log('Claude Code CLI not found, skipping (https://claude.com/claude-code)');
@@ -34,7 +37,9 @@ if (commandExists('claude')) {
 if (commandExists('codex')) {
   found = true;
   console.log('\n== Codex ==');
-  run('codex', ['plugin', 'marketplace', 'add', MARKETPLACE_REPO]);
+  succeeded =
+    run('codex', ['plugin', 'marketplace', 'add', MARKETPLACE_REPO]) &&
+    succeeded;
   console.log(
     `\nMarketplace added. Run "codex /plugins" to install: ${PLUGINS.join(', ')}`
   );
@@ -47,5 +52,10 @@ if (!found) {
     '\nNeither the Claude Code nor Codex CLI was found on your PATH. ' +
       'Install one of them first, then re-run this command.'
   );
+  process.exit(1);
+}
+
+if (!succeeded) {
+  console.error('\nOne or more marketplace installation commands failed.');
   process.exit(1);
 }
